@@ -1,0 +1,208 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+     overflow: auto;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+  font-size: 62.5%;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  width: 100%;
+  clear: both;
+}
+
+
+head {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  width: fit-content;
+  float: right;
+  text-align: right;
+  font-size: 2rem;
+  background: transparent;
+}
+
+footer {
+  width: 90%;
+  font-size: 2rem;
+}
+
+.welcome {
+  line-height: 20px;
+  height:100%;
+  padding: 2% 4%;
+  font-size: 1rem;
+  clear: both;
+  width: 100%;
+}
+
+.search {
+  width: 40%;
+}
+
+.discover {
+  line-height: 15px;
+  padding: 2% 4%;
+  height: 100%;
+  clear: both;
+  margin-bottom: 4%;
+  background-color: #e7edfd;
+  display: inline-block;
+}
+
+.discover section {
+  width: 100%;
+  padding: 0 2% 1% 0%;
+  float: right;
+}
+
+.orderOnline {
+  height: 100%;
+  clear: both;
+  text-align: center;
+  padding: 4%;
+}
+
+.contact {
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 15px;
+  text-align: center;
+  background-color: #e7edfd;
+}
+
+.hours {
+  width: 100%;
+  display: inline-block;
+}
+
+.weekdays, .weekends, .weekdayTime, .weekendTime {
+  width: 25%;
+  height: 100%;
+  float: left;
+  font-size: 1.8rem;
+  text-align: left;
+  line-height: 20px;
+}
+
+.weekdays, .weekdayTime {
+  margin: 0 5% 0 20%;
+}
+
+.weekends, .weekendTime {
+  margin: 0 20% 0 5%;
+}
+
+.reviews {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+
+@media (min-width:1280px ) {
+  .menu {
+    width: 100%;
+    float: none;
+    display: inline-block;
+  }
+  
+  body {
+    width: 100%;
+  }
+  
+  .discover {
+    display: inline-block;
+    width: 100%;
+  }
+  .discover section  {
+    width: 70% ;
+    float: right;
+  }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  color: orange;
+  line-height: 5px;
+  font-size: 1.7rem;
+}
+
+.welcome > section {
+  width: 100%;
+  clear: both;
+}
+
+ h1 {
+  font-size: 3rem;
+  line-height: 20px;
+  clear: both;
+}
+
+.dropDown {
+  background-color: orange;
+  border: 7px solid orange;
+  padding: 1px;
+  border-radius: 2%;
+}
+
+.number {
+  padding: 3%;
+  font-size: 1.7rem;
+}
+
+.number > a {
+  color: orange;
+  font-weight: 700 ;
+  line-height: 20px;
+  font-size: 1.7rem;
+}
+
+.reviews {
+  padding: 2%;
+}
+
+p {
+  font-size: 1.7rem;
+  line-height: 20px;
+}
+
+span {
+  font-size: 1.7rem;
+}

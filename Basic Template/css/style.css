@@ -1,0 +1,205 @@
+/* Box Model Hack */
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+  line-height: 1.8rem;
+  font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #2a324b;
+  text-align: center;
+  height: auto;
+}
+
+html {
+  height: auto;
+  background: #2a324b;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+  header .clearfix {
+  width: 100%;
+  height: 4%;
+  background-color: #687394;
+  color: white;
+  text-align: center;
+}
+
+.button{
+  float: left;
+  margin-left: 10px;
+  width: 20%;
+}
+
+ .logo{
+  float: left;
+  width: 5%;
+  height: auto;
+  margin: 5px 10% 0 10%;
+}
+
+.button.donate {
+  float: right;
+  width: 20%;
+  margin: 0 15px 0 0;
+}
+
+.grit {
+  color: white;
+  background-color: #687394;
+  height: 25%;
+  padding: 5%;
+}
+
+
+.why {
+  background-color: white;
+  padding: 2%;
+  height: 40%;
+}
+
+.visitMain.clearfix {
+  background-color: lightgrey;
+  width: 100%;
+  height: 30%;
+}
+
+.visitGym {
+  padding: 2%;
+  height: 100%;
+  float: left;
+  background-color: lightgrey;
+  width: 50%;
+}
+
+.visitUs {
+  padding: 2%;
+  height: 100%;
+  float: left;
+  background-color: lightgrey;
+  width: 50%;
+}
+
+.logoBody {
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin: 0 0 0 5px;
+}
+
+.volunteer {
+  padding: 5%;
+  background: white;
+}
+
+
+.navBottom{
+  background-color: #2a324b;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: static;
+  bottom: 0;
+}
+
+.footerSocials{
+  width: 35%;
+  float: left;
+  background-color: #2a324b;
+  text-align: left;
+  margin-left: 2%;
+}
+
+
+.footerContact{
+  width: 60%;
+  float: left;
+  background-color: #2a324b;
+  word-spacing: 2px;
+  line-height: 10px;
+  text-align: left;
+
+}
+
+.disclaimer {
+  float: left;
+  width: 90%;
+  height: 20px;
+  background-color: #2a324b;
+  text-align: left;
+  margin: 0 0 0 20px;
+  clear: left;
+}
+
+.disclaimerIMG {
+  float: left;
+  clear: both;
+  width: 2.5%;
+  height: auto;
+  background-color: #2a324b;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.siteMap *, .contribute *{
+  font-size: 1.5rem;
+  line-height: 15px;
+  text-align: left;
+}
+
+footer h4 {
+  color: #5c6991;
+}
+
+footer span {
+  color: lightgrey;
+}
+
+h1, h2 {
+  font-size: 2rem;
+}
+
+h4, h3, span, p, li, a {
+  font-size: 1.5rem;
+}
+
+a.classes {
+  margin-right: 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.disclaimer span {
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+}

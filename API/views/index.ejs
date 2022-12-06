@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brew Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <h1> May Your Brew Be Good </h1>
+  <form action="/addBrew" method="POST">
+    <input type="text" placeholder="Country" name="country">
+    <input type="text" placeholder="Region" name="region">
+    <input type="text" placeholder="Estate" name="estate">
+    <input type="text" placeholder="Varietal" name="varietal">
+    <input type="number" step='0.01' placeholder="Ground Weight" name="groundWeight">
+    <input type="number" step='0.01' placeholder="Ratio" name="ratio">
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2> Brew Calculator </h2>
+  <ul class="addBrew">
+    <% for(let i = 0; i < brewCollection.length; i++) {%>
+      <li class="brewCollection"></li>
+        <span id="country"><%= brewCollection[i].country %></span>
+        <span id="region"><%= brewCollection[i].region %></span>
+        <span id="estate"><%= brewCollection[i].estate %></span>
+        <span id="varietal"><%= brewCollection[i].varietal %></span>
+        <span id="groundWeight"><%= brewCollection[i].groundWeight %>g</span>
+        <span id="ratio"><%= brewCollection[i].ratio %>g</span> 
+        <span id="printBrew"><%= brewCollection[i].printBrew %>g</span>
+        <span class='fa fa-thumbs-up'></span>
+        <span class='fa fa-trash'></span>
+      </li>
+   <% } %>
+  </ul>
+
+  <button id="calculate">Calculate Brews</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

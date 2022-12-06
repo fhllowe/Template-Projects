@@ -1,0 +1,261 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+
+/* Clear fix hack */
+.clearfix::after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+     overflow: auto;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+  font-size: 62.5%;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  width: 100%;
+  clear: both;
+  padding-top: 0;
+}
+
+
+head {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-size: 2rem;
+  padding: 3% 3% 0 3%;
+  background-color: white;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 10%;
+}
+
+.dropbtn span {
+  width: 100%;
+  float: left;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  width: 80%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: fixed;
+  touch-action: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+footer {
+  width: 90%;
+  font-size: 2rem;
+}
+
+.welcome {
+ 
+  height:100%;
+  padding: 1% 4%;
+  font-size: 1rem;
+  clear: both;
+  width: 100%;
+}
+
+.search {
+  width: 35%;
+}
+
+.discover {
+
+  padding: 1% 4%;
+  height: 100%;
+  clear: both;
+  display: inline-block;
+}
+
+.discover section {
+  width: 100%;
+  float: right;
+}
+
+.orderOnline {
+  height: 100%;
+  clear: both;
+  text-align: center;
+  width: 100%;
+  padding: 1% 4%;
+}
+
+.contact {
+  height: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.hours {
+  width: 100%;
+  display: inline-block;
+}
+
+.hours * {
+  width: 50%;
+  float: right;
+  clear: left;
+}
+
+
+.reviews, .team {
+  width: 100%;
+  padding: 1% 4%;
+  text-align: center;
+}
+
+
+@media (min-width:750px ) {
+  body {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    width: 40%;
+  }
+  
+  .discover {
+    display: inline-block;
+    width: 100%;
+  }
+  .discover section  {
+    width: 70% ;
+    float: right;
+  }
+  .hours {
+    padding: 1% 20% 1% 20%;
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: #ff8100;
+
+  font-size: 1.7rem;
+}
+
+.welcome > section {
+  width: 100%;
+  clear: both;
+}
+
+ h1 {
+  font-size: 3rem;
+  margin: 0;
+  clear: both;
+  text-align: justify;
+}
+
+.number {
+  padding: 1% 4%;
+  font-size: 1.7rem;
+}
+
+.number > a {
+  color:  #ff8100;
+  font-weight: 700 ;
+
+  font-size: 1.7rem;
+}
+
+
+p {
+  font-size: 1.7rem;
+
+  text-align: left;
+}
+
+span {
+  font-size: 1.7rem;
+  text-align: center
+}
+
+img {
+  width: 100%;
+  padding: 1% 0;
+}
+
+@media (min-width: 750px) {
+  img {
+    width: 20%;
+  }
+}
+div {
+  font-size: 1.7rem;
+}

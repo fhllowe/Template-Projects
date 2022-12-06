@@ -1,0 +1,47 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+       overflow: auto;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+body {
+    width: 100%;
+    clear: both;
+  }
+  
+  
+  head {
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
