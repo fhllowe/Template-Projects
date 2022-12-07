@@ -4,7 +4,7 @@ const { calculateObjectSize } = require('bson');
 const app = express();
 const PORT = 3000;
 const MongoClient = require('mongodb').MongoClient
-const connectionString = 'mongodb+srv://fhllowe:7ywT7AbWX82N2@cluster0.g7cjba3.mongodb.net/morningbrew?retryWrites=true&w=majority'
+const connectionString = 'insert string here'
 
 
   
